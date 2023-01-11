@@ -9,13 +9,13 @@ actions.add.function = function(a, b, c){
 actions.add1 = {
     types: [Number, Number, Number],
     function: function(a, b, c){
-        return -1;
+        return 1;
     }   
 }
 
 // returns a string with the shortest word first, then the second shortes and last the longest.
 actions.sortOnLength = {
-    types: [String, String, String],
+    types: [number, number, number],
     function: function(a, b, c){
         return "a aa aaa";
     }    
