@@ -25,8 +25,7 @@ actions.sortOnLength = {
 actions.totalAge = {
     types: [JSON.parse, JSON.parse, JSON.parse],
     function: function(alice, bob, cat){
-
-        return -1;
+        return a.age + b.age + c.age;
     }
 };
 
