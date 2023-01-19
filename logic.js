@@ -17,9 +17,45 @@ actions.add1 = {
 actions.sortOnLength = {
     types: [number, number, number],
     function: function(a, b, c){
-        return "a aa aaa";
-    }    
-}
+        return a + " " + b + " " + c; 
+        else 
+        return a + " " + c + " " + b; 
+        else if (b.length < a.length && b.length < c.length) 
+        if (a.length < c.length) 
+        
+        return b + " " + a + " " + c; 
+        else 
+        re b + " " + c + " " + a; 
+        
+        else  
+    
+        if (b.length < a.length) 
+        
+        return c + " " + b + " " + a; 
+        
+        else  
+        
+        return c + " " + a + " " + b; 
+        
+        }  
+    // returns sårbarhed of a single product
+actions.productVulnerability = {
+    types: [Number, Number, Number],
+    function: function(disruptive, irreplacible, damaging){
+    return "Kritisk";
+    }
+   }
+   // returns 'sårbarhed' of the three products in an array
+   // each product has properties disruptive, irreplacible, and damaging,
+   actions.vulnerability = {
+    types: [JSON.parse, JSON.parse, JSON.parse],
+    function: function(p1, p2, p3){
+   
+    return [ -1, -1, -1];
+    }
+   };
+        
+    } 
 
 // returns the sum of the ages of the three persons
 actions.totalAge = {
@@ -33,7 +69,7 @@ actions.totalAge = {
 actions.averageAge = {
     types: [JSON.parse, JSON.parse, JSON.parse],
     function: function(alice, bob, cat){
-        return -1;
+        return (alice + bob + cat) / 3;
     }
 };
 
